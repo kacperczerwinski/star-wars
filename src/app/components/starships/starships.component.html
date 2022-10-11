@@ -1,0 +1,8 @@
+<form class="card">
+  <li *ngFor="let starship of filteredOptions | async">
+    {{ starship?.name }}/ {{ starship?.length | length }}/
+    {{ starship?.model }}
+    <button type="button" (click)="onSelect(starship)">Details</button>
+  </li>
+  <span *ngIf="!filteredOptions">Loading...</span>
+</form>

@@ -1,0 +1,20 @@
+<div class="topnav">
+  <a routerLink="/films">Films</a>
+  <a routerLink="/people">People</a>
+  <a routerLink="planets">Planets</a>
+  <a routerLink="/species">Species</a>
+  <a routerLink="/starships">Starships</a>
+  <a routerLink="vehicles">Vehicles</a>
+  <div class="search-container">
+    <form>
+      <input
+        type="text"
+        placeholder="Search.."
+        name="search"
+        type="text"
+        placeholder="Pick one"
+        [formControl]="myHeroes"
+      />
+    </form>
+  </div>
+</div>

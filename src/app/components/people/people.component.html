@@ -1,0 +1,8 @@
+<form class="card">
+  <li *ngFor="let person of filteredOptions | async">
+    {{ person?.name }}/ {{ person?.height | height }}/
+    {{ person?.homeWorldName }}
+    <button type="button" (click)="onSelect(person)">Details</button>
+  </li>
+  <span *ngIf="!filteredOptions">Loading...</span>
+</form>

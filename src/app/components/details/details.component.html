@@ -1,0 +1,47 @@
+<div class="card" *ngIf="!isStarshipDetails">
+  <button routerLink="../..">Back</button>
+  <ul>
+    Name:{{
+      selectedItem?.name
+    }}
+  </ul>
+  <ul>
+    Gender:{{
+      selectedItem?.gender
+    }}
+  </ul>
+  <ul>
+    Height:{{
+      selectedItem?.height | height
+    }}
+  </ul>
+  <ul>
+    Home World:{{
+      selectedItem?.homeWorldName
+    }}
+  </ul>
+</div>
+
+<div class="card" *ngIf="isStarshipDetails">
+  <button routerLink="../..">Back</button>
+  <ul>
+    Name:{{
+      selectedItem?.name
+    }}
+  </ul>
+  <ul>
+    Model:{{
+      selectedItem?.model
+    }}
+  </ul>
+  <ul>
+    Passengers:{{
+      selectedItem?.passengers
+    }}
+  </ul>
+  <ul>
+    Crew:{{
+      selectedItem?.crew
+    }}
+  </ul>
+</div>
